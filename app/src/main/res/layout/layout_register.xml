@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="CLINIC APP"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/sp24"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:paddingTop="@dimen/dp5"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text">
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text">
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text">
+
+        <EditText
+            android:id="@+id/edtMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="@string/mobile"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="12"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text">
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_marginEnd="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@drawable/shadow_button"
+        android:padding="@dimen/dp5"
+        android:text="@string/register"
+        android:textColor="@color/icons" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</LinearLayout>

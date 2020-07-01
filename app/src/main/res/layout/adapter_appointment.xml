@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#FA0"
+    app:cardElevation="@dimen/dp5"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/cardview"
+    app:contentPadding="@dimen/dp10">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:src="@drawable/man"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+        <ImageView
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_margin="@dimen/dp5"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/ic_box"
+            android:id="@+id/imgConfirm"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="Vijay"
+            android:textAlignment="center"
+            android:textColor="@color/icons"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/txtGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="Vijay"
+            android:textAlignment="center"
+            android:textColor="@color/colorButtonNormal"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/txtName" />
+
+        <TextView
+            android:id="@+id/txtConfirmation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            app:layout_constraintBottom_toTopOf="@id/imgConfirm"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/txtHospitalName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:visibility="invisible"
+            android:text="Vijay"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/txtGender" />
+
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/divider"
+            app:layout_constraintTop_toBottomOf="@id/txtHospitalName" />
+
+
+        <TextView
+            android:id="@+id/txtCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="@string/fa_icon_call"
+            android:textColor="@color/primary"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+
+        <TextView
+            android:id="@+id/txtCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp15"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="@string/cancel"
+            android:visibility="invisible"
+            android:textColor="@color/primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/txtCall"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+
+        <TextView
+            android:id="@+id/txtDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp15"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp5"
+            android:visibility="invisible"
+            android:textColor="@color/primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/txtCancel"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

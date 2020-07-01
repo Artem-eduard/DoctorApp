@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp5">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp300"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_right"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="@dimen/dp10"
+            android:text="vijay vijay vijay vijay vijay vijay vijay vijayvijayvijay vijay vijay vijay"
+
+            android:textColor="@color/icons"
+            android:textSize="@dimen/sp16" />
+
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMessage"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_marginTop="@dimen/dp10"
+                android:padding="@dimen/dp5"
+                android:text="10:10 Am"
+                android:textColor="@color/icons" />
+
+
+            <ImageView
+                android:id="@+id/imgTick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp5"
+                android:src="@drawable/ic_tick"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

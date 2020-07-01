@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/primary">
+
+
+        <ImageView
+            android:id="@+id/imgBackArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/dp10"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_arrow_back_white" />
+
+
+        <!-- <ImageView
+             android:id="@+id/imgCall"
+             android:contentDescription="@string/app_name"
+             android:layout_width="@dimen/dp60"
+             android:layout_height="@dimen/dp60"
+             android:layout_toStartOf="@id/imgMsg"
+             android:layout_toLeftOf="@+id/imgMsg"
+             android:src="@drawable/call01" />
+
+         <ImageView
+             android:id="@+id/imgMsg"
+             android:contentDescription="@string/app_name"
+             android:layout_width="@dimen/dp60"
+             android:layout_height="@dimen/dp60"
+             android:layout_toStartOf="@id/imgShare"
+             android:layout_toLeftOf="@+id/imgShare"
+             android:src="@drawable/chat01" />
+
+         <ImageView
+             android:id="@+id/imgShare"
+             android:contentDescription="@string/app_name"
+             android:layout_width="@dimen/dp60"
+             android:layout_height="@dimen/dp60"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentRight="true"
+             android:src="@drawable/share01" />-->
+
+
+        <ProgressBar
+            android:id="@+id/updateProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp5"
+
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp5"
+            android:padding="@dimen/dp10"
+            android:textColor="@color/icons"
+            android:text="@string/update"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="@dimen/dp90"
+        android:layout_height="@dimen/dp90"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:src="@drawable/man"
+        app:civ_border_color="@color/icons"
+        app:civ_border_overlay="true"
+        app:civ_border_width="@dimen/dp3" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileImage"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp40"
+            android:layout_marginEnd="@dimen/dp40"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/dp40">
+
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/rounded_edittext"
+                android:maxHeight="@dimen/dp60"
+                android:padding="@dimen/dp5"
+                android:gravity="center"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:id="@+id/txtAge"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/rounded_edittext"
+                android:maxHeight="@dimen/dp60"
+                android:padding="@dimen/dp5"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp20"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:id="@+id/txtMobile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/rounded_edittext"
+                android:maxHeight="@dimen/dp60"
+                android:padding="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/rounded_edittext"
+                android:maxHeight="@dimen/dp60"
+                android:padding="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/rounded_edittext"
+                android:maxHeight="@dimen/dp60"
+                android:padding="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:textColor="@color/primary" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/profileImage"
+         android:layout_marginBottom="@dimen/dp10"
+         android:layout_marginTop="@dimen/dp10">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="@dimen/dp40"
+             android:layout_marginLeft="@dimen/dp40"
+             android:layout_marginRight="@dimen/dp40"
+             android:layout_marginStart="@dimen/dp40">
+
+             <include
+                 android:id="@+id/donorDetails"
+                 layout="@layout/donor_details"
+                 android:visibility="gone" />
+
+             <include
+                 android:id="@+id/campDetails"
+                 layout="@layout/camp_details"
+                 android:visibility="gone" />
+
+             <include
+                 android:id="@+id/requestDetails"
+                 layout="@layout/request_details"
+                 android:visibility="gone" />
+
+         </RelativeLayout>
+
+     </ScrollView>-->
+
+</RelativeLayout>

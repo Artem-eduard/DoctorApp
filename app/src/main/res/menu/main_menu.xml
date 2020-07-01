@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/calendarDate"
+        android:icon="@drawable/ic_calendar"
+        android:title="Cart"
+        app:actionLayout="@layout/custom_action_layout"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/logout"
+        android:title="@string/logout"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/chat"
+        android:title="@string/chat"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/tags"
+        android:title="Tag"
+        android:visible="false"
+        app:showAsAction="never" />
+
+
+</menu>

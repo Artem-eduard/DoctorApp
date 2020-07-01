@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="create"
+            type="com.cb.softwares.doctorapp.interfaces.CreateTag" />
+
+        <variable
+            name="tags"
+            type="com.cb.softwares.doctorapp.model.TagCreation" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text">
+
+
+            <EditText
+                android:id="@+id/edtHospitalName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Hospital Name"
+                android:onTextChanged="@{(text, start, before, count) -> tags.onHospitalNameTextChanged(text)}"
+                android:padding="@dimen/dp10"
+                android:text="@{tags.hospitalName}"
+                android:textColor="@color/primary_text"
+                android:textColorHint="@color/primary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text">
+
+            <EditText
+                android:id="@+id/edtHospitalAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Hospital Address"
+                android:onTextChanged="@{(text, start, before, count) -> tags.onHospitalAddressChanged(text)}"
+                android:padding="@dimen/dp10"
+                android:text="@{tags.hospitalAddress}"
+                android:textColor="@color/primary_text"
+                android:textColorHint="@color/primary"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtHospitalName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text">
+
+            <EditText
+                android:id="@+id/edtStartTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Start Time"
+                android:inputType="time"
+                android:onTextChanged="@{(text, start, before, count) -> tags.onStartTimeChanged(text)}"
+                android:padding="@dimen/dp10"
+                android:text="@{tags.startTime}"
+                android:textColor="@color/primary_text"
+                android:textColorHint="@color/primary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtHospitalAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text">
+
+            <EditText
+                android:id="@+id/edtEndTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="End Time"
+                android:inputType="time"
+                android:onTextChanged="@{(text, start, before, count) -> tags.onEddTimeChanged(text)}"
+                android:padding="@dimen/dp10"
+                android:text="@{tags.endTime}"
+                android:textColor="@color/primary_text"
+                android:textColorHint="@color/primary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtStartTime" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="@{()->create.createTag(tags)}"
+            android:text="Save"
+            android:layout_gravity="center"
+            android:textColor="@color/icons"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtEndTime" />
+
+
+    </LinearLayout>
+</layout>

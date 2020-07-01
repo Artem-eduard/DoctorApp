@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Care</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="forgotPassword">Forgot Password</string>
+    <string name="reenter">Re-enter Password</string>
+    <string name="update">ReSchedule</string>
+    <string name="server_client_id">ADzFKekhLxdYFooS0EfVKCh1</string>
+    <string name="about">About</string>
+    <string name="uploadslider">Upload Slider Image</string>
+    <string name="noItem">No Item Found</string>
+    <string name="treatments">Treatments</string>
+    <string name="name">Name</string>
+    <string name="username">Email address</string>
+    <string name="retry">Retry</string>
+    <string name="location">Location</string>
+    <string name="enterDetails">Enter Details</string>
+    <string name="submit">Submit</string>
+    <string name="add">Add</string>
+    <string name="tips">Tips</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="message">Message</string>
+    <string name="appointment">Appointment Booked</string>
+    <string name="bookAppointment">Book Appointment</string>
+    <string name="noAppointment">No appointment found</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="profile">Profile</string>
+    <string name="feedback">Feedback</string>
+    <string name="logout">Logout</string>
+    <string name="hom">Home</string>
+    <string name="delete">Delete</string>
+    <string name="createTreatments">Create Treatment</string>
+    <!--otp screen-->
+    <string name="enterotp">Enter OTP</string>
+    <string name="otpdetails">Please enter OTP received via SMS / EMAIL , below for  verification</string>
+    <string name="verify">Verify</string>
+    <string name="otpnotreceive">Didn\'t receive OTP?</string>
+    <string name="resendotp">Resend OTP</string>
+    <string name="otpTitle">OTP Verification</string>
+    <string name="otprequired">Please enter OTP</string>
+    <string name="otpmismatch">OTP mismatched</string>
+    <string name="myAppointments">My Appointments</string>
+    <string name="cancelAll">Cancel All</string>
+    <string name="changeSlot">Change Slot</string>
+
+    <string name="noSlots">Enter No.of Slots</string>
+    <string name="qus1">Ques 1</string>
+    <string name="qus2">Ques 2</string>
+    <string name="qus3">Ques 3</string>
+    <string name="qus4">Ques 4</string>
+    <string name="qus5">Ques 5</string>
+    <string name="good">Good</string>
+    <string name="bad">Bad</string>
+    <string name="average">Average</string>
+    <string name="other"> Other  please mention</string>
+    <string name="testtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software. </string>
+    <string name="title_activity_maps">Map</string>
+    <string name="map">Show in Map</string>
+    <string name="call">Call Now</string>
+    <string name="cancel">Cancel</string>
+    <string name="chat">Chat</string>
+
+    <string name="fa_icon_call">&#xf095;</string>
+    <string name="fa_icon_piechart">&#xf200;</string>
+    <string name="fa_icon_linechart">&#xf201;</string>
+
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gender">Gender</string>
+
+    <string-array name="genderArray">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Transgender</item>
+    </string-array>
+
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="age">Age</string>
+    <string name="title_activity_calendar_acitivy">CalendarAcitivy</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
